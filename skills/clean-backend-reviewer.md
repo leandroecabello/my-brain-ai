@@ -1,7 +1,34 @@
 # Skill: Clean Backend Reviewer
----
-## Checklist de Calidad
-- **DTOs:** Verificá que siempre existan validaciones de entrada (`class-validator` en Nest o `@Valid` en Spring).
-- **Manejo de Errores:** Asegurame de que no haya `try-catch` vacíos. Proponé siempre un Global Exception Handler.
-- **Inyección de Dependencias:** Validá que no se usen dependencias circulares y que se use inyección por constructor.
-- **Naming:** Si ves variables como `data`, `list` o nombres genéricos, sugerí nombres basados en el dominio del negocio.
+
+## Purpose
+Review backend code to ensure maintainability, correctness, and adherence to clean architecture principles.
+
+## When to use
+- Code reviews
+- Refactoring
+- Validating new features
+
+## Checklist
+
+### Input Validation
+- DTOs must validate input (`class-validator`, `@Valid`, etc.)
+- Reject invalid data early
+
+### Error Handling
+- No empty `try-catch`
+- Use centralized/global error handling
+- Errors must be meaningful and consistent
+
+### Dependency Injection
+- No circular dependencies
+- Prefer constructor injection
+- Avoid service instantiation inside methods
+
+### Naming
+- Avoid generic names (`data`, `list`, `item`)
+- Use domain-driven naming
+
+## Output Expectations
+- Identify issues clearly
+- Suggest concrete improvements
+- Highlight missing edge cases or tests

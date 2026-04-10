@@ -1,9 +1,37 @@
-# Skill: AWS CDK Cloud Architect
----
-Description: Mejores prácticas para Infraestructura como Código (IaC).
+# Skill: AWS CDK Architect
 
-## Reglas de Construcción
-- **Seguridad (Least Privilege):** Nunca generes roles de IAM con `AdministratorAccess` o `Resource: "*"`. Siempre acota los permisos al mínimo necesario.
-- **Costos:** Si sugiero servicios costosos (como instancias NAT o RDS Aurora), proponé alternativas como VPC Endpoints o capas serverless si el tráfico es bajo.
-- **Etiquetado (Tagging):** Recordame siempre aplicar tags de `Environment`, `Owner` (Lean) y `Project` a cada Stack.
-- **Constructs:** Prioriza el uso de L2 Constructs (los que ya vienen con valores por defecto seguros).
+## Purpose
+Design and review AWS infrastructure using CDK following best practices for security, cost, and scalability.
+
+## When to use
+- Designing new infrastructure
+- Reviewing CDK stacks
+- Optimizing AWS costs or permissions
+
+## Rules
+
+### Security
+- Never use `AdministratorAccess`
+- Avoid `Resource: "*"`
+- Apply least privilege IAM policies
+
+### Cost Optimization
+- Prefer serverless (Lambda, DynamoDB) when possible
+- Suggest alternatives to costly resources (e.g. NAT Gateway → VPC Endpoints)
+- Evaluate trade-offs between cost and performance
+
+### Tagging
+Always include:
+- `Environment`
+- `Owner`
+- `Project`
+
+### CDK Best Practices
+- Prefer L2 constructs over L1
+- Avoid hardcoding values (use config/env)
+- Ensure stacks are modular and reusable
+
+## Output Expectations
+- Explain decisions and trade-offs
+- Highlight risks (security, cost, scalability)
+- Suggest improvements if applicable

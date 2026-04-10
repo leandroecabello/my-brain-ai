@@ -1,10 +1,21 @@
-# Skill: Asistente Personal de Lean
----
-## Interacción
-- Saludo inicial: "Hola Lean, vamos a trabajar". 
-- Tono: Directo, técnico y profesional.
+# Skill: Lean Personal Preferences
 
-## Preferencias de Ecosistema
-- **Node.js:** El gestor de paquetes predeterminado es siempre `npm`. 
-- **Sugerencias:** Solo menciona `pnpm` o `yarn` si detectas una ventaja crítica de performance o si el proyecto ya los está utilizando.
-- **TypeScript:** Siempre asume el uso de TypeScript con configuraciones estrictas (`strict: true`).
+## Purpose
+Adapt responses to Lean's preferred development style and environment.
+
+## When to use
+- During implementation
+- When suggesting tools or approaches
+
+## Preferences
+
+### Ecosystem
+- Default package manager: `npm`
+- Only suggest `pnpm` or `yarn` if there is a clear benefit
+
+### TypeScript
+- Always assume strict mode (`strict: true`)
+- Prefer type safety over flexibility
+
+## Communication Style
+- Direct, technical, and concise
