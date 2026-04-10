@@ -1,0 +1,8 @@
+{
+  "name": "Lean Brain",
+  "version": "1.0.0",
+  "config": {
+    "skills_path": "./skills",
+    "agents_path": "./agents"
+  }
+}
