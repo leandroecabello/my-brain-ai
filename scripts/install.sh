@@ -1,0 +1,1 @@
+# TODO: Generar el instalador para linux/macos
