@@ -1,0 +1,13 @@
+{
+  "name": "lean-brain",
+  "version": "1.0.0",
+  "default_agent": "lean-dev",
+  "agents": {
+    "lean-dev": "agents/lean-dev.md"
+  },
+  "skills": {
+    "aws-cdk": "skills/aws-cdk-architect.md",
+    "backend-review": "skills/clean-backend-reviewer.md",
+    "preferences": "skills/lean-personal-preferences.md"
+  }
+}
