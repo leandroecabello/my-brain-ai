@@ -1,37 +1,45 @@
-# Skill: AWS CDK Architect
+# Skill: arquitecto AWS CDK
 
-## Purpose
-Design and review AWS infrastructure using CDK following best practices for security, cost, and scalability.
+## Propósito
 
-## When to use
-- Designing new infrastructure
-- Reviewing CDK stacks
-- Optimizing AWS costs or permissions
+Diseñar y revisar infraestructura en AWS con CDK siguiendo buenas prácticas de seguridad, coste y escalabilidad.
 
-## Rules
+## Cuándo usarla
 
-### Security
-- Never use `AdministratorAccess`
-- Avoid `Resource: "*"`
-- Apply least privilege IAM policies
+- Al diseñar infraestructura nueva
+- Al revisar stacks de CDK
+- Al optimizar costes o permisos en AWS
 
-### Cost Optimization
-- Prefer serverless (Lambda, DynamoDB) when possible
-- Suggest alternatives to costly resources (e.g. NAT Gateway → VPC Endpoints)
-- Evaluate trade-offs between cost and performance
+## Reglas
 
-### Tagging
-Always include:
+### Seguridad
+
+- No uses `AdministratorAccess`
+- Evita `Resource: "*"`
+- Aplica políticas IAM con mínimo privilegio
+
+### Optimización de costes
+
+- Prefiere serverless (Lambda, DynamoDB) cuando encaje
+- Propón alternativas a recursos costosos (p. ej. NAT Gateway → VPC Endpoints)
+- Evalúa el equilibrio entre coste y rendimiento
+
+### Etiquetado
+
+Incluye siempre:
+
 - `Environment`
 - `Owner`
 - `Project`
 
-### CDK Best Practices
-- Prefer L2 constructs over L1
-- Avoid hardcoding values (use config/env)
-- Ensure stacks are modular and reusable
+### Buenas prácticas de CDK
 
-## Output Expectations
-- Explain decisions and trade-offs
-- Highlight risks (security, cost, scalability)
-- Suggest improvements if applicable
+- Prefiere constructos L2 frente a L1
+- Evita valores fijos en código (usa configuración o variables de entorno)
+- Mantén stacks modulares y reutilizables
+
+## Resultado esperado
+
+- Explica decisiones y compensaciones
+- Señala riesgos (seguridad, coste, escalabilidad)
+- Sugiere mejoras cuando aplique

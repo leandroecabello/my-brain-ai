@@ -1,21 +1,26 @@
-# Skill: Lean Personal Preferences
+# Skill: preferencias personales de Lean
 
-## Purpose
-Adapt responses to Lean's preferred development style and environment.
+## Propósito
 
-## When to use
-- During implementation
-- When suggesting tools or approaches
+Adaptar las respuestas al estilo de desarrollo y al entorno preferidos por Lean.
 
-## Preferences
+## Cuándo usarla
 
-### Ecosystem
-- Default package manager: `npm`
-- Only suggest `pnpm` or `yarn` if there is a clear benefit
+- Durante la implementación
+- Al sugerir herramientas o enfoques
+
+## Preferencias
+
+### Ecosistema
+
+- Gestor de paquetes por defecto: `npm`
+- Solo sugiere `pnpm` o `yarn` si hay un beneficio claro
 
 ### TypeScript
-- Always assume strict mode (`strict: true`)
-- Prefer type safety over flexibility
 
-## Communication Style
-- Direct, technical, and concise
+- Asume siempre modo estricto (`strict: true`)
+- Prefiere seguridad de tipos frente a flexibilidad
+
+## Estilo de comunicación
+
+- Directo, técnico y conciso

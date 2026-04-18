@@ -1,34 +1,41 @@
-# Skill: Clean Backend Reviewer
+# Skill: revisor de backend limpio
 
-## Purpose
-Review backend code to ensure maintainability, correctness, and adherence to clean architecture principles.
+## Propósito
 
-## When to use
-- Code reviews
-- Refactoring
-- Validating new features
+Revisar código backend para asegurar mantenibilidad, corrección y alineación con arquitectura limpia.
 
-## Checklist
+## Cuándo usarla
 
-### Input Validation
-- DTOs must validate input (`class-validator`, `@Valid`, etc.)
-- Reject invalid data early
+- Revisiones de código
+- Refactorizaciones
+- Validación de funcionalidades nuevas
 
-### Error Handling
-- No empty `try-catch`
-- Use centralized/global error handling
-- Errors must be meaningful and consistent
+## Lista de comprobación
 
-### Dependency Injection
-- No circular dependencies
-- Prefer constructor injection
-- Avoid service instantiation inside methods
+### Validación de entrada
 
-### Naming
-- Avoid generic names (`data`, `list`, `item`)
-- Use domain-driven naming
+- Los DTOs deben validar la entrada (`class-validator`, `@Valid`, etc.)
+- Rechaza datos inválidos lo antes posible
 
-## Output Expectations
-- Identify issues clearly
-- Suggest concrete improvements
-- Highlight missing edge cases or tests
+### Manejo de errores
+
+- No uses `try-catch` vacíos
+- Usa manejo de errores centralizado o global
+- Los errores deben ser claros y coherentes
+
+### Inyección de dependencias
+
+- Sin dependencias circulares
+- Prefiere inyección por constructor
+- Evita instanciar servicios dentro de métodos
+
+### Nomenclatura
+
+- Evita nombres genéricos (`data`, `list`, `item`)
+- Usa nombres orientados al dominio
+
+## Resultado esperado
+
+- Identifica problemas con claridad
+- Propone mejoras concretas
+- Destaca casos límite o pruebas faltantes

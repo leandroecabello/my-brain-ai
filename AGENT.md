@@ -1,23 +1,23 @@
-# Agent System
+# Sistema de agentes
 
-This project defines reusable AI agents and skills.
+Este proyecto define agentes y skills reutilizables para IA.
 
-## Structure
+## Estructura
 
-- agents/: contains agent roles
-- skills/: contains reusable tasks
+- `agents/`: roles de agente
+- `skills/`: tareas o guías reutilizables
 
-## Execution Model
+## Modelo de ejecución
 
-When performing a task:
+Al realizar una tarea:
 
-1. Select the appropriate agent
-2. Load relevant skills
-3. Execute step by step
-4. Validate before applying changes
+1. Elige el agente adecuado
+2. Carga las skills pertinentes
+3. Ejecuta paso a paso
+4. Valida antes de aplicar cambios
 
-## Rules
+## Reglas
 
-- Always explain decisions
-- Prioritize maintainability and scalability
-- Avoid unnecessary complexity
+- Explica siempre las decisiones
+- Prioriza mantenibilidad y escalabilidad
+- Evita complejidad innecesaria
