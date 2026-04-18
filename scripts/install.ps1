@@ -150,7 +150,10 @@ Default agent: lean-dev
         Write-Step "Copilot configurado"
     }
     else {
-        Write-Step "Copilot ya configurado (no se sobrescribe)"
+        Write-Step "Copilot ya tiene configuración. No se modifica."
+        Write-Host "👉 Si querés usar Lean Brain, agregá manualmente las rutas:" -ForegroundColor Yellow
+        Write-Host "$BrainPath\agents"
+        Write-Host "$BrainPath\skills"
     }
 }
 
@@ -167,6 +170,8 @@ if ($Tools -contains "cursor") {
         New-Item -ItemType Directory -Path $CursorDir | Out-Null
     }
 
+    if (-not (Test-Path $CursorFile)) {
+
 @"
 Use agents from:
 $BrainPath\agents
@@ -175,7 +180,15 @@ Use skills from:
 $BrainPath\skills
 "@ | Out-File -Encoding utf8 $CursorFile
 
-    Write-Step "Cursor configurado"
+        Write-Step "Cursor configurado"
+
+    } else {
+
+        Write-Step "Cursor ya tiene configuración. No se modifica."
+        Write-Host "👉 Agregá manualmente si querés usar Lean Brain:" -ForegroundColor Yellow
+        Write-Host "$BrainPath\agents"
+        Write-Host "$BrainPath\skills"
+    }
 }
 
 # =========================
